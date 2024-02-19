@@ -1,10 +1,19 @@
 {
     "configurations": [
         {
-            "name": "@PROJ_NAME@",
+            "name": "Attach @PROJ_NAME@",
             "cwd": "${workspaceRoot}",
             "executable": "@PROJ_ELF_PATH@",
             "request": "attach",
+            "type": "cortex-debug",
+            "servertype": "stutil",
+            "v1": false
+        },
+        {
+            "name": "Debug @PROJ_NAME@",
+            "cwd": "${workspaceRoot}",
+            "executable": "@PROJ_ELF_PATH@",
+            "request": "launch",
             "type": "cortex-debug",
             "servertype": "stutil",
             "v1": false
